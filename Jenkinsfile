@@ -33,7 +33,7 @@ node {
           colorized: true,
           become: true,
           playbook: 'playbook.yml',
-         inventory: '${HOST},',
+          inventory: 'hosts.yml',
           extras: "--extra-vars 'image=$IMAGE'"
       )
     }
